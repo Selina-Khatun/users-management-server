@@ -5,7 +5,9 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(cors());
+// it must be write on the server.if it is not written,the data will show undefined 
 app.use(express.json());
+
 
 const users=[
     {id:1,name:'abid',email:'abid@gmail'},
